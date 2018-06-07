@@ -59,7 +59,8 @@ public class MaxHeap {
 			array[count + 1] = n;
 			count++;
 		}
-
+		
+		
 		push(10);
 		pop();
 	}
