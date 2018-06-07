@@ -3,6 +3,9 @@ package BFS;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/*
+ * 인접행렬을 통한 너비우선탐색. 큐를 활용하여 탐색을 한다.
+*/
 public class BreathFirstSearch {
 	
 	public static void main(String[] args) {
@@ -41,9 +44,6 @@ public class BreathFirstSearch {
 		}else {
 			System.out.println(path);
 		}
-		
-		
-		
 	}
 
 }
