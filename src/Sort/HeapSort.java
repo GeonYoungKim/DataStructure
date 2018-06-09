@@ -8,11 +8,14 @@ public class HeapSort {
 		Heap heap=new Heap();
 		
 		for(int i=0;i<arr.length;i++) {
-			heap.insertHeap(arr[i]);
+			heap.insert(arr[i]);
 		}
+		//heap.print();
 		
 		for(int i=arr.length-1;i>=0;i--) {
-			arr[i]=heap.deleteHeap();
+			int value=heap.delete();
+			
+			arr[i]=value;
 		}
 		
 		for(int i=0;i<arr.length;i++) {

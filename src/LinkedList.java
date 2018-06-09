@@ -93,8 +93,6 @@ public class LinkedList {
 		node=null;
 		
 		return data;
-		
-		
 	}
 	
 	public Object remove(int k) {
