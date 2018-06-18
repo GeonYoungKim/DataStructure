@@ -26,9 +26,9 @@ public class Main {
 //	    priorityQueue.offer(prisoner5);
 	    
 	    
-	  //내림차순
-        PriorityQueue<Prisonar> reversedPriorityQueue = 
-                new PriorityQueue<Prisonar>(priorityQueue.size(), Collections.reverseOrder());
+//	  //내림차순
+//        PriorityQueue<Prisonar> reversedPriorityQueue = 
+//                new PriorityQueue<Prisonar>(priorityQueue.size(), Collections.reverseOrder());
         
 	    while (!priorityQueue.isEmpty()) {
 	    	int prisoner = priorityQueue.poll();

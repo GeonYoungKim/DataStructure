@@ -30,22 +30,27 @@ public class MaxHeap {
 
 	public static void pop() {
 		int start = 1;
+		int tmp=array[start];
+		int parent=1;
+		int child=2;
 		array[start] = array[count];
 		array[count] = 0;
 		count--;
 
-		while (true) {
-			if (array[start] > array[start * 2] && array[start] > array[start * 2 + 1]) {
-				break;
-			} else if (array[start] > array[start * 2]) {
-				swap(start, start * 2);
-				start = start * 2;
-			} else {
-				swap(start, start * 2 + 1);
-				start = start * 2 + 1;
+		while(child<=count) {
+			if(array[child]<array[child+1]) {
+				child++;
 			}
-
+			if(tmp>=array[child]) {
+				break;
+			}
+			array[parent]=array[child];
+			parent=child;
+			child=child*2;
+			
+			
 		}
+		array[parent]=tmp;
 	}
 
 	public static void main(String[] args) {
